@@ -10,5 +10,12 @@ for i in os.listdir(D):
         T.write(S.read())
         S.close()
         T.close()
-
+for i in ['STANKI.SKR']:
+        print D,i,'->',i
+        S=open(r'%s\%s'%(D,i),'rb')
+        T=open(i,'wb')
+        T.write(S.read())
+        S.close()
+        T.close()
     
+raw_input('.')
