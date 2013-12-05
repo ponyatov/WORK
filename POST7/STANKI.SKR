@@ -1,0 +1,21 @@
+|----------------|------------------------------|---------------|
+|   MACHINE      |      REMARKS                 |NUMBER OF POST.|
+|----------------|------------------------------|---------------|
+|APT-CLI         |      NCVEFIRY                |  9999         |
+|HITACHI         |      FANUC-7M                |  20           |
+|BERENS          |      SINUMERIC-6M            |  21           |
+|AGIE            |      AGIEMATIC-C             |  346          |
+|TNV40           |      FANUC-0MC               |  4040         |
+|MAXC            |      CNC-1                   |  3305         |
+|MAXC_G81        |      CNC-1                   |  2206         |
+|MAXCG81         |      CNC-1                   |  2279         |
+|MAXC_G81T       |      CNC-1                   |  6606         |
+|MAXCG81T        |      CNC-1                   |  6679         |
+|MAX-D-NO START  |      CNC                     |  3315         |
+|MAX-XY          |      CNC                     |  3307         |
+|FAGOR-M         |      FCN-500                 |  3322         |
+|FAGOR-T         |      TCN-105                 |  3323         |           
+|WABECO          |      CC-D6000E               |  3423         |
+|CC-F1210E       |WABECO KOSY                   |  1210         |
+|CC-D6000E       |WABECO KOSY                   |  6000         |
+|----------------|------------------------------|---------------|
