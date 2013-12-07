@@ -95,7 +95,7 @@ BLOCK;
 END ;
 
 35 ;
-// [35] def tool ;
+// [35] DEF TOOL;
 _TYPE='error';
 IF FR[3]=1 _TYPE='endmill';
 IF FR[3]=2 _TYPE='drill';
@@ -118,7 +118,8 @@ IF FR[25]=4 _A=180;
 IF FR[25]=5 _A=225;
 IF FR[25]=6 _A=270;
 IF FR[25]=7 _A=315;
-_T->'( def tool: type:@[_TYPE] @[_SM]:@[_B] R:@[_R] A:@[_A] )';
+_TN=FR[4];
+_T->'( def tool: @[_TN] type:@[_TYPE] @[_SM]:@[_B] R:@[_R] A:@[_A] )';
 NBL/OFF;
 BLOCK;
 END ;
@@ -137,7 +138,7 @@ BLOCK;
 END ;
 
 451 ;
-// [451] clearance ;
+// [451] CLEARANCE;
 _CLEARX=99999;
 IF FR[10]=1 _CLEARX=FR[11];
 _CLEARY=99999;
