@@ -1,0 +1,59 @@
+1 ;
+// [1] PROGRAM;
+// COMMAN DFIELD INDEXES;
+_T=1;
+_N=2;
+_M=3;
+_G=4;
+_X=5;
+_Z=6;
+_O=7;
+_S=8;
+_TOOL=9;
+_F=10;
+// SET SPACES ON BETWEEN COMMAND FIELDS;
+INT/ON;
+// FIRST LINE;
+_T->'%';
+NBL/OFF;
+BLOCK;
+END ;
+
+2 ;
+// [2] DETAIL;
+END ;
+
+3 ;
+// [3] MACHINE;
+_TYPE='error';
+_A=FR[3];
+IF _A=0 _TYPE='lathe';
+IF _A=1 _TYPE='center';
+IF _A=2 _TYPE='mill3d';
+IF _A=3 _TYPE='drill';
+IF _A=5 _TYPE='mill2.5d';
+// INIT MACHINE: G18 G21 G53 G80 UNSUPPORTED // ABSOLUTE COORDINATES: G90;
+_G->90;
+BLOCK;
+END ;
+
+4 ;
+// [3] PROGRAM END;
+_G->99;
+BLOCK;
+END ;
+
+401 ;
+// [401] CYCLE BEGIN;
+_MODE=FR[0];
+IF _MODE=11 DO;
+  ENDDO;
+END ;
+
+460 ;
+// [460] USER PARAMS;
+_NP=FR[3];
+_P1=FR[101];
+END ;
+
+END ;
