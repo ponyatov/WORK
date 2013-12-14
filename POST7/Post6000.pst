@@ -11,6 +11,7 @@ _F=7;
 _T=8;
 _S=9;
 _O=10;
+_U=11;
 // SAFE AND CREARANCE;
 _SAFEX=9999;
 _SAFEY=9999;
@@ -35,10 +36,20 @@ _G->99;
 BLOCK;
 END ;
 
+24 ;
+// SPINDLE ;
+_M->25;
+_U->15;
+BLOCK;
+_M->10;
+_O->6.1;
+BLOCK;
+END;
+
 35 ;
 // TOOL;
 _M->6;
-_T->1;
+_T->N/TOOL;
 BLOCK;
 END ;
 
@@ -47,6 +58,12 @@ END ;
 IF FR[10]=1 _SAFEX=FR[11];
 IF FR[12]=1 _SAFEY=FR[13];
 IF FR[14]=1 _SAFEZ=FR[15];
+_G->0;
+_X->_SAFEX;
+BLOCK;
+_G->0;
+_Z->_SAFEZ;
+BLOCK;
 END ;
 
 END ;
